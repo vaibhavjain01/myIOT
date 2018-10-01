@@ -1,0 +1,9 @@
+#Subscribe to default port
+mosquitto_sub -d -t hello/world
+
+
+#Publish to default port on localhost
+mosquitto_pub -d -t hello/world -m ""
+
+#Publish on specific host at specific port
+mosquitto_pub -h 192.168.206.5 -p 1883 -t hello -m ""
